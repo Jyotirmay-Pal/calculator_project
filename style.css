@@ -1,0 +1,54 @@
+body{
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0.25);
+    ;
+    
+}
+.calculator{
+margin-top: 100px;
+padding: 20px;
+border-radius: 9px;
+display: grid;
+grid-template-columns: repeat(4,50px);
+justify-content: center;
+align-items: center;
+}
+#input{
+    grid-column: span 4;
+    /* because grid-column span will take all the columns having buttons ,here as i require 4 span of columns 
+    */
+    width: 187px;
+    height: 50px;
+    box-shadow: inset -5px -5px 12px whitesmoke;
+    border-radius: 9px;
+    font-size: 20px;
+}
+#input::placeholder{
+    align-content: end;
+    text-align: end;
+    font-size: 40px;
+}
+button{
+    cursor: pointer;
+    margin: 0;
+    width: 40px;
+    box-shadow: inset -5px -5px 12px black;
+    border-radius: 20%;
+    padding: 5px ;
+    flex: 1;
+}
